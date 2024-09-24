@@ -1,0 +1,1 @@
+https://dev.to/peshanghiwa/publishing-a-vue-3-typescript-component-library-to-github-packages-46ec
