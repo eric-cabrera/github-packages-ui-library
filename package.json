@@ -22,21 +22,28 @@
     "type": "git",
     "url": "https://github.com/eric-cabrera/github-packages-ui-library"
   },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build && vue-tsc",
-    "preserve": "vite build",
-    "serve": "vite preview --port 5050",
-    "typecheck": "vue-tsc --noEmit",
-    "preview": "vite preview",
-    "test": "exit 0"
-  },
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build && vue-tsc",
+  "preserve": "vite build",
+  "serve": "vite preview --port 5050",
+  "typecheck": "vue-tsc --noEmit",
+  "preview": "vite preview",
+  "test": "exit 0",
+  "lint": "eslint --ext .js,.ts,.vue src",
+  "lint:fix": "eslint --ext .js,.ts,.vue src --fix"
+}
+,
   "dependencies": {
     "vue": "^3.2.45"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
     "@vitejs/plugin-vue": "^4.0.0",
+    "eslint": "^9.11.1",
+    "eslint-plugin-vue": "^9.28.0",
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
     "vite-plugin-css-injected-by-js": "^3.5.1",

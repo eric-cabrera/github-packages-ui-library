@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "composite": true,                          // Added: Enables incremental builds
-    "target": "ES2022",                         // Keep as-is: Target modern ES version
-    "lib": ["ES2023"],                          // Keep as-is: Uses the latest libraries
+    "composite": true,                          // Enables incremental builds
+    "target": "ESNext",                         // Keep as-is: Target modern ES version
+    "lib": ["ESNext"],                          // Use the latest libraries
     "module": "ESNext",
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "node",                 // Updated: Use Node.js style resolution
-    "allowSyntheticDefaultImports": true,       // Added: Allows default imports without specifying default
+    "moduleResolution": "node",                 // Use Node.js style resolution
+    "allowSyntheticDefaultImports": true,       // Allows default imports without specifying default
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
