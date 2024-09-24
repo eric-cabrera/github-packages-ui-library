@@ -1,24 +1,46 @@
 {
   "compilerOptions": {
-    "composite": true,                          // Enables incremental builds
-    "target": "ESNext",                         // Keep as-is: Target modern ES version
-    "lib": ["ESNext"],                          // Use the latest libraries
+    "baseUrl": "./",
+    "target": "ESNext",
+    "useDefineForClassFields": true,
     "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
-
+    
     /* Bundler mode */
-    "moduleResolution": "node",                 // Use Node.js style resolution
-    "allowSyntheticDefaultImports": true,       // Allows default imports without specifying default
+    "moduleResolution": "node",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,                             // No output; useful for configs like this
+    "noEmit": false,  // Ensure this is set to false
+    "outDir": "dist",
+    "declaration": true,
+    "declarationDir": "./dist/types",
+    "composite": true,
+    "jsx": "preserve",
 
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Paths */
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true
   },
-  "include": ["vite.config.ts"]                 // Keep: Include your Vite config
+  "include": [
+    "vite.config.*",
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "vue-shim.d.ts"
+  ]
 }

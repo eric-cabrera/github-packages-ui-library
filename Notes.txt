@@ -4,3 +4,13 @@ https://dev.to/peshanghiwa/publishing-a-vue-3-typescript-component-library-to-gi
 
 npm run lint
 npm run lint:fix
+
+
+Remove-Item -Recurse -Force node_modules
+Remove-Item package-lock.json
+
+npm cache clean --force
+
+
+
+

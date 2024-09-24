@@ -12,12 +12,12 @@
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": false,
+    "noEmit": false,  // Ensure this is set to false
     "outDir": "dist",
-    "declaration": true,                     // Ensure this is included
-    "declarationDir": "./dist/types",       // Directory for generated declaration files
-    "composite": true,                       // Enable composite projects
-    "jsx": "preserve",                      // Support JSX for Vue components
+    "declaration": true,
+    "declarationDir": "./dist/types",
+    "composite": true,
+    "jsx": "preserve",
 
     /* Linting */
     "strict": true,
@@ -32,7 +32,7 @@
 
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "skipDefaultLibCheck": true              // Optional: skip type checking of default library files
+    "skipDefaultLibCheck": true
   },
   "include": [
     "vite.config.*",
